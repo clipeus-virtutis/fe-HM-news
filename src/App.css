@@ -3,11 +3,28 @@ html {
   color: #746f72;
 }
 
+a {
+  color: #746f72;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #4a1c45;
+}
+
+body {
+  margin: 0px;
+  text-decoration: none;
+}
+
 .App {
   text-align: center;
   border-style: solid;
   border-radius: 10px;
   border-color: #2d898b;
+  margin-top: 55px;
+  margin-left: 2px;
+  margin-right: 2px;
 }
 
 .H4 {
@@ -22,10 +39,12 @@ html {
   display: grid;
   grid-template-columns: 1;
   grid-template-rows: auto;
-  margin-left: 0%;
-  margin-right: 0%;
+  margin-left: 2px;
+  margin-right: 2px;
   border-style: solid;
   border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 2%;
   padding-right: 2%;
   border-color: #2d898b;
@@ -37,9 +56,42 @@ html {
   grid-template-columns: 100%;
   grid-template-rows: auto;
   border: 2px solid #2d898b;
-  border-radius: 4px;
+  border-radius: 10px;
   padding: 0.5rem;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
   height: calc(100vh / 4);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #4a1c45;
+  border: 2px solid #746f72;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+  border-right: 2px solid #746f72;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+.Navigation-li {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.Navigation-li:hover {
+  background-color: #2d898b;
+  color: #4a1c45;
 }
