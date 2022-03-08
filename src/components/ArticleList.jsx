@@ -15,7 +15,7 @@ export default function ArticleList() {
   }, []);
   if (isLoading) return <p>loading...</p>;
   return (
-    <section>
+    <section className="Article-Cards">
       {articles.map((article) => {
         return <ArticleCard key={article.article_id} {...article} />;
       })}
