@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import * as api from "./api";
 
 export default function TopicButtons(props) {
-  // const { topics } = props;
   const [topics, setTopics] = useState([]);
   useEffect(() => {
     api.fetchTopics().then((data) => {
