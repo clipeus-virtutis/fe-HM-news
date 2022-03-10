@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header";
 import ArticleList from "./components/ArticleList";
+import ArticleByTopic from "./components/ArticleByTopic";
 import NavBar from "./components/NavBar";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/articles" element={<ArticleList />} />
           <Route path="/" element={<Navigate replace to="/articles" />} />
+          <Route path="/articles/:topic" element={<ArticleByTopic />} />
         </Routes>
       </div>
     </BrowserRouter>

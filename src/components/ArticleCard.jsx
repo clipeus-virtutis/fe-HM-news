@@ -5,7 +5,7 @@ export default function ArticleCard({ article_id, title, topic, author, body, cr
 
   return (
     <article className="Article-Card">
-      <Link to={`/articles/${article_id}`}>
+      <Link to={`/article/${article_id}`}>
         <h4 className="H4">{title}</h4>
       </Link>
       <dl>

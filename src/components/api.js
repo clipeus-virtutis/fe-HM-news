@@ -15,3 +15,9 @@ export function fetchTopics() {
     return response.data;
   });
 }
+
+export function fetchArticlesByTopic(topic) {
+  return newsApi.get(`/articles?topic=${topic}`).then((response) => {
+    return response.data;
+  });
+}
