@@ -14,9 +14,9 @@ function App() {
         </nav>
         <Header />
         <Routes>
-          <Route path="/articles" element={<ArticleList />} />
           <Route path="/" element={<Navigate replace to="/articles" />} />
-          <Route path="/articles/:topic" element={<ArticleByTopic />} />
+          <Route path="/articles" element={<ArticleList />} />
+          <Route path="/topics/:topic" element={<ArticleByTopic />} />
         </Routes>
       </div>
     </BrowserRouter>

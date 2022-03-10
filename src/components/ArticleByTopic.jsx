@@ -19,7 +19,7 @@ export default function ArticleByTopic() {
   if (isLoading) return <p>loading...</p>;
   return (
     <section className="Article-Cards">
-      {/* <TopicButtons /> */}
+      <TopicButtons />
       {articles.map((article) => {
         return <ArticleCard key={article.article_id} {...article} />;
       })}
