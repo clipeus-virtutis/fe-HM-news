@@ -63,6 +63,17 @@ body {
   height: calc(100vh / 4);
 }
 
+.Article-Card-Single {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  border: 2px solid #2d898b;
+  border-radius: 10px;
+  padding: 0.5rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 ul {
   list-style-type: none;
   margin: 0;

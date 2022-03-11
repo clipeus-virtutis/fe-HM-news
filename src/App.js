@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import ArticleList from "./components/ArticleList";
 import ArticleByTopic from "./components/ArticleByTopic";
 import NavBar from "./components/NavBar";
+import IndividualArticle from "./components/IndividualArticle";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<Navigate replace to="/articles" />} />
           <Route path="/articles" element={<ArticleList />} />
           <Route path="/topics/:topic" element={<ArticleByTopic />} />
+          <Route path="/articles/:article_id" element={<IndividualArticle />} />
         </Routes>
       </div>
     </BrowserRouter>

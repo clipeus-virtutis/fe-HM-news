@@ -21,3 +21,9 @@ export function fetchArticlesByTopic(topic) {
     return response.data;
   });
 }
+
+export function fetchSingleArticle(articleId) {
+  return newsApi.get(`/articles/${articleId}`).then((response) => {
+    return response.data;
+  });
+}
