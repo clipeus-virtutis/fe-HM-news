@@ -1,3 +1,4 @@
+import ArticleComments from "./ArticleComments";
 import ArticleVotes from "./ArticleVotes";
 
 export default function SingleArticleCard({ article }) {
@@ -17,6 +18,7 @@ export default function SingleArticleCard({ article }) {
         <ArticleVotes votes={article.votes} article_id={article.article_id} />
         <dt>Comments: {article.comment_count}</dt>
       </dl>
+      <ArticleComments article_id={article.article_id} />
     </article>
   );
 }
