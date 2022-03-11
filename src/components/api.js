@@ -31,3 +31,9 @@ export function fetchSingleArticle(articleId) {
 export function patchArticleVotes(articleId, inc_votes) {
   return newsApi.patch(`/articles/${articleId}`, { inc_votes });
 }
+
+export function fetchArticleComments(articleId) {
+  return newsApi.get(`/articles/${articleId}/comments`).then((response) => {
+    return response.data;
+  });
+}
