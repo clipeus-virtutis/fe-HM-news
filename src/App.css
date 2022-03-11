@@ -126,3 +126,29 @@ li:last-child {
   background-color: #4a1c45;
   color: #2d898b;
 }
+
+.ArticleVotes-Votes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.ArticleVotes-div-buttons {
+  margin-right: 5px;
+  padding: 5px;
+  background-color: #2d898b;
+  color: #4a1c45;
+}
+
+.ArticleVotes-div-buttons:hover {
+  background-color: #4a1c45;
+  color: #2d898b;
+}
+
+.ArticleVotes-div-buttons:disabled {
+  opacity: 50%;
+  background-color: #2d898b;
+  color: #4a1c45;
+}

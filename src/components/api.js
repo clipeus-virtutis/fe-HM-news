@@ -27,3 +27,7 @@ export function fetchSingleArticle(articleId) {
     return response.data;
   });
 }
+
+export function patchArticleVotes(articleId, inc_votes) {
+  return newsApi.patch(`/articles/${articleId}`, { inc_votes });
+}
